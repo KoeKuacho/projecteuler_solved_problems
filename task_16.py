@@ -4,8 +4,10 @@ Problem 16: Power digit sum
 What is the sum of the digits of the number 21000?
 """
 
-p = 100000
-sum_digit_power = sum(list(map(int, str(2**p))))
-print(sum_digit_power)
+p = 1000
+sum_digit_power = sum(list(map(int, str(2 ** p))))
+print('result =', sum_digit_power)
+
+
 
 
