@@ -22,8 +22,7 @@ What is the index of the first term in the Fibonacci sequence to contain 1000 di
 """
 
 fibo_nums = []
-f1 = 1
-f2 = 1
+f1, f2 = 1, 1
 fibo_nums.append(f1)
 fibo_nums.append(f2)
 
