@@ -21,27 +21,20 @@ from math import sqrt
 
 start = time.time()
 
-triangle_nums = []
 summary = 0
 i = 1
-count = 0
+
 while True:
-    if count > 500:
-        break
     digit = summary + i
     summary = digit
     i += 1
-    triangle_nums.append(digit)
     count = 2
     for j in range(2, int(sqrt(digit)) + 1):
-        if count > 500:
-            print('Result =', digit)
-            break
         if digit % j == 0:
             count += 2
-
-
-print(triangle_nums)
+    if count > 500:
+        print('Result =', digit)
+        break
 
 end = time.time()
 print('Time of execution = ' + str(end - start))
